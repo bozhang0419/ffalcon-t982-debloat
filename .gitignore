@@ -1,0 +1,4 @@
+*.apk
+*.zip
+backup/
+build/
