@@ -14,6 +14,12 @@ The verified workaround: temporarily `pm disable-user com.android.packageinstall
 see §3), so everything is reversible. `restore.cmd` reverts the changes, `control.cmd` opens scrcpy
 with the software encoder (the Amlogic hardware encoder produces corrupt frames).
 
+## 效果
+
+| 改造前：原厂 CyberUI（推荐流 / 电视淘宝 / VIP 推广） | 改造后：静幕 QuietTV（无推荐流，输入源直达） |
+| --- | --- |
+| ![before](docs/images/before-cyberui.jpg) | ![after](docs/images/after-quietv.jpg) |
+
 ## 1. 这台固件的安装限制（实测结论）
 
 | 通道 | 结果 |
@@ -150,3 +156,5 @@ scrcpy -s <TV_IP>:5555 --max-size 1280 --video-bit-rate 2M --no-audio \
 GitHub 官方 Release、签名 CN=FongMi）。它是影视仓同家族（CatVod 系）开源版，配置目录同为
 `/sdcard/tvbox`，历史网盘参数（阿里云盘 OpenAPI / AList / 夸克 / 弹幕）可继续复用；
 接口/仓地址需自行配置。本记录不提供任何影视接口或源。
+
+![FongMi](docs/images/fongmi-player.jpg)
